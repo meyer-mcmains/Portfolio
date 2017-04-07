@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meyer McMains</title>
+    <!-- metadata if linked -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Meyer McMains" />
+    <meta property="og:description" content="I created this website to compliment my resume and LinkedIn."/>
+    <meta property="og:url" content="http://meyermcmains.com" />
+    <meta property="og:image" content="images/thumb.jpg" />
+    <!-- fonts utilized -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scrollingNav/css/scrolling-nav.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- get jquery before other scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+<!-- navbar for desktop viewing -->
+    <nav class="navbar navbar-default navbar-fixed-top desktop">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">Meyer McMains</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden active">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about"><span>About</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#education"><span>Education</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio"><span>Portfolio</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- navbar for mobile vieweing -->
+    <nav class="navbar navbar-default navbar-fixed-top mobile">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">Meyer McMains</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden active">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse" href="#about"><span>About</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse" href="#education"><span>Education</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse" href="#portfolio"><span>Portfolio</span></a>
+            </li>
+            <li>
+              <a class="page-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse" href="#contact"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- intoductory section -->
+    <section id="page-top" class="intro-section">
+      <h1>Welcome!</h1>
+      <p class="text"><br><br> I created this website to compliment my resume and LinkedIn.
+      This is a single page website so feel free to scroll through the content or jump to various
+      sections using the navigation bar. <br><br> Thanks for visiting!</p>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+      <h1>About</h1>
+      <img class="me" src="images/me.png" alt="portrait of Meyer McMains">
+      <p class="text">I am Meyer McMains. <br><br> Currently I am a senior at East Tennessee State University pursuing a
+      degree in computer science and a minor in digital media. The computing major allows me to hone my skills as a programmer,
+      while my minor enables me to pursue my artistic interest. The combination of the two allows me to create functional and aesthetically pleasing products.</p>
+    </section>
+
+    <!-- education section -->
+    <section id="education" class="education-section">
+      <h1>Education</h1>
+      <p class="text"> <br> Senior at East Tennessee State University <br><br></p>
+
+      <div class="sidebyside-div">
+          <p class="sidebyside">
+          Graduating May 2017 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Major - Computer Science <br>
+          &nbsp;&nbsp;&nbsp;&nbsp; Minor - Digital Media <br><br>
+          </p>
+      </div>
+
+      <p class="text">
+      Computer Science <br>
+      My degree in computer science is focused on programming and its associated skills. I have learned how programming languages work at both a high and low level, and how computers fundamentally function at both a hardware and software level. I have experience in several programming languages and a variety of development environments. Also, I have cultivated skills related to software development practices, and developing software on a team.
+      </p><br><br>
+
+      <div class="image-div">
+        <img class="logos" src="images/code/cplus.svg" alt="C++" title="C++">
+        <img class="logos" src="images/code/csharp.svg" alt="C Sharp" title="C Sharp">
+        <img class="logos" src="images/code/MASM.svg" alt="Microsoft Macro Assembler" title="Microsoft Macro Assembler">
+        <img class="logos" src="images/code/python.svg" alt="Python" title="Python">
+        <img class="logos" src="images/code/java.svg" alt="Java" title="Java">
+        <img class="logos" src="images/code/html.svg" alt="HTML 5" title="HTML 5">
+        <img class="logos" src="images/code/css.svg" alt="CSS 3" title="CSS 3">
+        <img class="logos" src="images/code/javascript.svg" alt="JavaScript", title="JavaScript">
+        <img class="logos" src="images/code/sql.svg" alt="SQL" title="SQL">
+        <img class="logos" src="images/code/vs.svg" alt="Visual Studio" title="Visual Studio">
+        <img class="logos" src="images/code/xamarin.svg" alt="Xamarin" title="Xamarin">
+        <img class="logos" src="images/code/github.svg" alt="Ghithub" title="Github">
+        <img class="logos" src="images/code/morae.svg" alt="Morae" title="Morae">
+      </div>
+
+      <p class="text">
+      Digital Media <br>
+      My minor in digital media covers a broader spectrum of proficiencies rather than concentration in a specific area. I have been exposed to a variety of software used for creating digital art in both 2D and 3D formats. Also, I have experience in photography and photo editing. After studying various aspects of digital media, I quite enjoy 3D modeling, rendering, and raster/vector based imaging.
+      </p><br><br>
+
+      <div class="image-div">
+        <img class="logos" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img class="logos" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <img class="logos" src="images/media/maya.svg" alt="Maya" title="Maya">
+        <img class="logos" src="images/media/arnold.svg" alt="Arnold for Maya" title="Arnold for Maya">
+        <img class="logos" src="images/media/affinity.svg" alt="Affinity Photo" title="Affinity Photo">
+        <img class="logos" src="images/media/zbrush.svg" alt="Zbrush" title="Zbrush">
+        <img class="logos" src="images/media/cloud.svg" alt="Creative Cloud" title="Creative Cloud">
+      </div>
+
+    </section>  
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="portfolio-section">
+      <h1>Portfolio</h1>
+
+      <h3 class="portfolio-heading">Stereo</h3>
+      <a href="images/portfolio/stereo.jpg" data-lightbox="stereo"><img class="portfolio-images" alt="stereo" src="images/portfolio/stereo.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <img class="made" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img class="made" src="images/media/arnold.svg" alt="Arnold for Maya" title="Arnold for Maya">
+        <img class="made" src="images/media/maya.svg" alt="Maya" title="Maya">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">This is a 3D render of my stereo. I created all of the models, textures, and shaders. I focused on creating a realistic scene through the use of high quality meshes, arnold shaders, and lighting.</p>
+
+      <h3 class="portfolio-heading">Apartment</h3>
+      <a href="images/portfolio/room.jpg" data-lightbox="room"><img class="portfolio-images" alt="room" src="images/portfolio/room.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <img class="made" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img class="made" src="images/media/arnold.svg" alt="Arnold for Maya" title="Arnold for Maya">
+        <img class="made" src="images/media/maya.svg" alt="Maya" title="Maya">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">The room above is a 3D render made in Maya. The general design of the room was based off a reference image, but I took artistic liberties on the contents of the room. I achieved a realistic scene through the lighting and textures.</p>
+
+      <h3 class="portfolio-heading">Theodore Roosevelt</h3>
+      <a href="images/portfolio/roosevelt.jpg" data-lightbox="roosevelt"><img class="portfolio-images" alt="roosevelt" src="images/portfolio/roosevelt.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">I used a photo of Roosevelt as a starting point for this portrait. I selected only a few colors to use, in order to create a very stylized portrait of the former president.</p>
+
+      <h3 class="portfolio-heading">Melnor</h3>
+      <a href="images/portfolio/Melnor.jpg" data-lightbox="Melnor"><img class="portfolio-images" alt="Dwarf" src="images/portfolio/Melnor.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">The character seen above is a dwarf I created named Melnor. The character turnaround shows each side of the dwarf as well as the main colors utilized. </p>
+
+      <h3 class="portfolio-heading">~R0B0T</h3>
+      <a href="images/portfolio/robot.jpg" data-lightbox="robot"><img class="portfolio-images" alt="Robot" src="images/portfolio/robot.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">This is a photo of a sculpture I created from various electronic parts. I then took the color photo and created a optomized black and white version. 
+      For those that are curious, the keyboard keys used as teeth say, "The Numbers".</p>
+
+      <h3 class="portfolio-heading">Circuit</h3>
+      <a href="images/portfolio/circuit.jpg" data-lightbox="circuit"><img class="portfolio-images" alt="circuit" src="images/portfolio/circuit.jpg"></a>
+      <div class="madeUsing-div">
+        <img class="made" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img class="made" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <img class="made" src="images/media/affinity.svg" alt="affinity" title="Affinity Photo">
+        <p class="madeUsing">Made Using:</p>
+      </div><br>
+      <p class="text">The collage above consist of several cards from a card game I co-created called Circuit. Circuit is a two to four player game where your goal is to complete your circuit before your opponent(s).</p>
+
+    </section>
+
+    <!-- contect section -->
+    <section id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <div class="contact-div" style="padding-top: 50px;">
+        <img class="contact-image" src="images/contact/email.svg" alt="email icon">
+        <a class="contact" target="_blank" href="mailto:meyer.mcmains@gmail.com">meyer.mcmains@gmail.com</a>
+      </div>
+      <div class="contact-div">
+        <img class="contact-image" src="images/contact/phonenum.svg" alt="phone icon">
+        <a class="contact" target="_blank" href="tel:1-615-943-6497">(615)-943-6497</a>
+      </div>
+      <div class="contact-div">
+        <img class="linkedin" src="images/contact/linkedin.svg" alt="linkedin icon">
+        <a class="contact" target="_blank" href="https://www.linkedin.com/in/meyer-mcmains-55523a120/">My LinkedIn</a>
+      </div>
+    </section> 
+
+    <!-- other javascript used -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scrollingNav/js/jquery.easing.min.js"></script>
+    <script src="scrollingNav/js/scrolling-nav.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    </body>
+</html>
