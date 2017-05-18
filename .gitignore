@@ -1,0 +1,27 @@
+# Images
+*.psd
+
+# Sublime Project
+*.sublime-project
+*.sublime-workspace
+*.bat
+*.exe
+*.dll
+*.zip
+*.txt
+*.mp3
+*.db
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

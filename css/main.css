@@ -86,12 +86,11 @@ h1 {
 .logos {
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
-	//max-height: 100px;
 	float: left;
-	padding-right: 10px;
 	padding-top: 10px;
 	cursor: pointer;
 	height: 100px;
+	width: calc(100% / 5);
 }
 
 .portfolio-images {
@@ -188,6 +187,10 @@ a:focus {
 	display: none;
 }
 
+.video {
+	width: 50%;
+}
+
 /* below is the css to be used for mobile devices */
 @media (max-width: 767px) {
 	.text {
@@ -199,18 +202,21 @@ a:focus {
 		font-size: 20px;
 		text-align: left;
  	}
+
  	.contact-div {
 		padding-top: 10px;
 		width: 90%;
 		margin: auto;
 		display: inline-block;
 	}
+
 	.madeUsing-div {
 		padding-top: 10px;
 		width: 90%;
 		margin: auto;
 		height: 35px;
 	}
+
 	.portfolio-images {
 		width: 90%;
 		border: solid 2px #0D9CF6;
@@ -226,6 +232,7 @@ a:focus {
 		text-align: left;
 		margin-top: 50px;
 	}
+
 	.sidebyside-div {
 		display: block;
 		width: 90%;
@@ -240,6 +247,7 @@ a:focus {
     	margin: auto;
     	margin-bottom: 50px;
 	}
+
 	.me {
 		margin-top: 50px;
 		border-radius: 50%;
@@ -247,6 +255,7 @@ a:focus {
 		border: 5px solid #0D9CF6;
 		margin-bottom: 25px;
 	}
+
 	.contact {
 		font-family: 'Ubuntu', sans-serif;
 		color: #0D9CF6;
@@ -255,12 +264,14 @@ a:focus {
 		text-align: right;
 		padding-top: 8px;
 	}
+
 	.contact-image {
 		height: 42px;
     	float: left;
     	padding-right: 50px;
     	-webkit-font-smoothing: antialiased;
 	}
+
 	.linkedin {
 		height: 42px;
     	float: left;
@@ -268,15 +279,27 @@ a:focus {
 		padding-left: 21px;
 		-webkit-font-smoothing: antialiased;
 	}
+
 	.contact-section {
 		background-color: #514F4F;
 		text-align: center;
 		padding-bottom: 100px;
 	}
+
 	.mobile {
 		display: block;
 	}
+
 	.desktop {
 		display: none;
 	}
+
+	.logos {
+	width: calc(100% / 3);
+	}
+
+	.video {
+		width: 90%;
+	}
+}
 }
