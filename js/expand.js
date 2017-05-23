@@ -7,7 +7,6 @@ $('.logos').click(function () {
 	});
 
 	logo.css('filter', 'brightness(100)');
-	logo.css('border', 'solid 5px');
 	$('#expand1').show();
 
 	switch(logo.data('clicked')) {
@@ -59,7 +58,6 @@ $('.logos2').click(function () {
 	});
 
 	logo.css('filter', 'brightness(100)');
-	logo.css('border', 'solid 5px');
 	$('#expand2').show();
 
 	switch(logo.data('clicked2')) {
