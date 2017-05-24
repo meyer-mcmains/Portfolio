@@ -1,12 +1,20 @@
+var colorHex = '';
+var colorHue = 0;
+
 $('.logos').click(function () {
 	var logo = $(this);
 
 	$('[data-clicked]').each(function(){
-	    $(this).css('filter', 'brightness(1)');
-	    $(this).css('border', 'none');
+	    $(this).css('filter', 'brightness(1) hue-rotate(' + colorHue + 'deg)');
 	});
 
-	logo.css('filter', 'brightness(100)');
+    $('[data-selected]').each(function(){
+        $(this).data('selected', false);
+    });
+
+    logo.data('selected', true);
+
+	logo.css('filter', 'brightness(100) hue-rotate(0)');
 	$('#expand1').show();
 
 	switch(logo.data('clicked')) {
@@ -46,18 +54,23 @@ $('.logos').click(function () {
     default:
         $('#expand1').text('');
        	break;
-}
+    }
 });
 
 $('.logos2').click(function () {
 	var logo = $(this);
 
 	$('[data-clicked2]').each(function(){
-	    $(this).css('filter', 'brightness(1)');
-	    $(this).css('border', 'none');
-	});
+        $(this).css('filter', 'brightness(1) hue-rotate(' + colorHue + 'deg)');
+    });
 
-	logo.css('filter', 'brightness(100)');
+    $('[data-selected2]').each(function(){
+        $(this).data('selected2', false);
+    });
+
+    logo.data('selected2', true);
+
+	logo.css('filter', 'brightness(100) hue-rotate(0)');
 	$('#expand2').show();
 
 	switch(logo.data('clicked2')) {
@@ -77,7 +90,7 @@ $('.logos2').click(function () {
     	$('#expand2').text('Arnold is an unbiased, physically based, ray tracing 3D rendering application created by the company Solid Angle.');
     	break;
     case 'al':
-    	$('#expand2').text('AL Shaders are a library of shaders that are used with the Arnold Renderer');
+    	$('#expand2').text('AL Shaders are a library of shaders that are used with the Arnold Renderer.');
     	break;
     case 'ap':
     	$('#expand2').text('Affinity Photo is a proprietary raster graphics editor by Serif for macOS and Windows. It has been described as a Photoshop alternative.');
@@ -91,5 +104,75 @@ $('.logos2').click(function () {
     default:
         $('#expand2').text('');
        	break;
+    }
+});
+
+$('.click').click(function() {
+    $('.colors').slideToggle(400);
+});
+
+$('.color').click(function() {
+    var dot = $(this);
+
+    switch(dot.data('color')) {
+    case 'default':
+        changeColor(0, '#0D9CF6');
+        break;
+    case 'redish':
+        changeColor(152, '#FF5957');
+        break;
+    case 'lightgreen':
+        changeColor(314, '#00B67E');
+        break;
+    case 'orange':
+        changeColor(206, '#BD8300');
+        break;
+    case 'pink':
+        changeColor(96, '#FF54EE');
+        break;
+    case 'purple':
+        changeColor(50, '#8F70FF');
+        break;
+    default:
+        break;
+    }
+
+});
+
+function changeColor(hue, hex) {
+    colorHue = hue;
+    colorHex = hex;
+    $('.navbar-nav>li').css('background-color', hex);
+    $('.me').css('filter', 'hue-rotate(' + hue + 'deg)');
+    $('.portfolio-images').css('border-color', hex);
+    $('.madeUsing').css('color', hex);
+    $('.made').css('filter', 'hue-rotate(' + hue + 'deg)');
+    $('.contact-image').css('color', hex);
+    $('.contact').css('color', hex);
+    $('.inLink').css('color', hex);
+    $('.recolor').css('color', hex);
+    $('.lightbox .lb-image').css('border-color', hex);
+    $('.lb-data .lb-close').css('filter', 'hue-rotate(' + hue + 'deg)');
+
+    $('[data-selected]').each(function(){
+        if ($(this).data('selected') === false) {
+            $(this).css('filter', 'hue-rotate(' + hue + 'deg)');
+        }
+    });
+
+    $('[data-selected2]').each(function(){
+        if ($(this).data('selected2') === false) {
+            $(this).css('filter', 'hue-rotate(' + hue + 'deg)');
+        }
+    });
+
 }
+
+
+$('.navbar-nav>li a').hover(function(e) { 
+    $(this).css('color',e.type === 'mouseenter'?colorHex:'#F2F2F2') 
+});
+
+$('.navbar-brand').hover(function(e) { 
+    $(this).css('color',e.type === 'mouseenter'?colorHex:'#F2F2F2') 
 });

@@ -13,13 +13,16 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="scrollingNav/css/scrolling-nav.css">
+    <link rel="stylesheet" href="vendor/scrollingNav/css/scrolling-nav.css">
     <link rel="stylesheet" href="css/nav.min.css">
-    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+    <link href="vendor/lightbox/css/lightbox.css" rel="stylesheet">
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome-extension/font-awesome-extension.min.css">
     <!-- get jquery before other scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="vendor/jquery.min.js"></script>
   </head>
 
   <body>
@@ -95,6 +98,17 @@
             <li>
               <a class="page-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse" href="#contact"><span>Contact</span></a>
             </li>
+            <li>
+              <ul style="padding: 0px; cursor: pointer">
+                <i class="click fa fae-palette-color fa-2x" aria-hidden="true"></i>
+                <i data-color="default" style="color: #0D9CF6;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+                <i data-color="lightgreen" style="color: #00B67E;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+                <i data-color="orange" style="color: #BD8300;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+                <i data-color="redish" style="color: #ff585d;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+                <i data-color="pink" style="color: #FF54EE;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+                <i data-color="purple" style="color: #8F70FF;" class="color fa fa-circle fa-2x" aria-hidden="true"></i>
+              </ul>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -136,17 +150,17 @@
       </p><br><br>
 
       <div class="image-div">
-        <img data-clicked="c++" id="cs" class="logos" src="images/code/cplus.svg" alt="C++" title="C++">
-        <img data-clicked="c#" id="cs" class="logos" src="images/code/csharp.svg" alt="C Sharp" title="C Sharp">
-        <img data-clicked="masm" id="cs" class="logos" src="images/code/MASM.svg" alt="Microsoft Macro Assembler" title="Microsoft Macro Assembler">
-        <img data-clicked="python" id="cs" class="logos" src="images/code/python.svg" alt="Python" title="Python">
-        <img data-clicked="java" id="cs" class="logos" src="images/code/java.svg" alt="Java" title="Java">
-        <img data-clicked="html" id="cs" class="logos" src="images/code/html.svg" alt="HTML 5" title="HTML 5">
-        <img data-clicked="css" id="cs" class="logos" src="images/code/css.svg" alt="CSS 3" title="CSS 3">
-        <img data-clicked="js" id="cs" class="logos" src="images/code/javascript.svg" alt="JavaScript", title="JavaScript">
-        <img data-clicked="sql" id="cs" class="logos" src="images/code/sql.svg" alt="SQL" title="SQL">
-        <img data-clicked="vs" id="cs" class="logos" src="images/code/vs.svg" alt="Visual Studio" title="Visual Studio">
-        <img data-clicked="git" id="cs" class="logos" src="images/code/github.svg" alt="Ghithub" title="Github">
+        <img data-selected="false" data-clicked="c++" class="logos" src="images/code/cplus.svg" alt="C++" title="C++">
+        <img data-selected="false" data-clicked="c#" class="logos" src="images/code/csharp.svg" alt="C Sharp" title="C Sharp">
+        <img data-selected="false" data-clicked="masm" class="logos" src="images/code/MASM.svg" alt="Microsoft Macro Assembler" title="Microsoft Macro Assembler">
+        <img data-selected="false" data-clicked="python" class="logos" src="images/code/python.svg" alt="Python" title="Python">
+        <img data-selected="false" data-clicked="java" class="logos" src="images/code/java.svg" alt="Java" title="Java">
+        <img data-selected="false" data-clicked="html" class="logos" src="images/code/html.svg" alt="HTML 5" title="HTML 5">
+        <img data-selected="false" data-clicked="css" class="logos" src="images/code/css.svg" alt="CSS 3" title="CSS 3">
+        <img data-selected="false" data-clicked="js" class="logos" src="images/code/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img data-selected="false" data-clicked="sql" class="logos" src="images/code/sql.svg" alt="SQL" title="SQL">
+        <img data-selected="false" data-clicked="vs" class="logos" src="images/code/vs.svg" alt="Visual Studio" title="Visual Studio">
+        <img data-selected="false" data-clicked="git" class="logos" src="images/code/github.svg" alt="Ghithub" title="Github">
       </div>
 
       <div id="expand1" class="text"></div>
@@ -159,15 +173,15 @@
       </p><br><br>
 
       <div class="image-div">
-        <img data-clicked2="ps" id="digm" class="logos2" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
-        <img data-clicked2="ai" id="digm" class="logos2" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
-        <img data-clicked2="maya" id="digm" class="logos2" src="images/media/maya.svg" alt="Maya" title="Maya">
-        <img data-clicked2="mudbox" id="digm" class="logos2" src="images/media/mudbox.svg" alt="Mudbox" title="Mudbox">
-        <img data-clicked2="arnold" id="digm" class="logos2" src="images/media/arnold.svg" alt="Arnold for Maya" title="Arnold for Maya">
-        <img data-clicked2="al" id="digm" class="logos2" src="images/media/al.svg" alt="AL Shaders for Maya" title="AL Shaders for Maya">
-        <img data-clicked2="ap" id="digm" class="logos2" src="images/media/affinity.svg" alt="Affinity Photo" title="Affinity Photo">
-        <img data-clicked2="zbrush" id="digm" class="logos2" src="images/media/zbrush.svg" alt="Zbrush" title="Zbrush">
-        <img data-clicked2="cc" id="digm" class="logos2" src="images/media/cloud.svg" alt="Creative Cloud" title="Creative Cloud">
+        <img data-selected2="false" data-clicked2="ps" class="logos2" src="images/media/photoshop.svg" alt="Photoshop" title="Photoshop">
+        <img data-selected2="false" data-clicked2="ai" class="logos2" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
+        <img data-selected2="false" data-clicked2="maya" class="logos2" src="images/media/maya.svg" alt="Maya" title="Maya">
+        <img data-selected2="false" data-clicked2="mudbox" class="logos2" src="images/media/mudbox.svg" alt="Mudbox" title="Mudbox">
+        <img data-selected2="false" data-clicked2="arnold" class="logos2" src="images/media/arnold.svg" alt="Arnold for Maya" title="Arnold for Maya">
+        <img data-selected2="false" data-clicked2="al" class="logos2" src="images/media/al.svg" alt="AL Shaders for Maya" title="AL Shaders for Maya">
+        <img data-selected2="false" data-clicked2="ap" class="logos2" src="images/media/affinity.svg" alt="Affinity Photo" title="Affinity Photo">
+        <img data-selected2="false" data-clicked2="zbrush" class="logos2" src="images/media/zbrush.svg" alt="Zbrush" title="Zbrush">
+        <img data-selected2="false" data-clicked2="cc" class="logos2" src="images/media/cloud.svg" alt="Creative Cloud" title="Creative Cloud">
       </div>
 
       <div id="expand2" class="text"></div>
@@ -220,10 +234,10 @@
         <img class="made" src="images/media/illustrator.svg" alt="Illustrator" title="Illustrator">
         <img class="made" src="images/code/html.svg" alt="HTML 5" title="HTML 5">
         <img class="made" src="images/code/css.svg" alt="CSS 3" title="CSS 3">
-        <img class="made" src="images/code/javascript.svg" alt="JavaScript", title="JavaScript">
+        <img class="made" src="images/code/javascript.svg" alt="JavaScript" title="JavaScript">
         <p class="madeUsing">Made Using:</p>
       </div><br>
-      <p class="text">ZoomTrip is a interactie website that I co-created. I designed the website, and wrote all of the javascript that allows zoomtrip to be interactive. I also wrote a utility program used to store metadata in the images, so when an image is loaded corresponding text could also be loaded as well. The website is hosted on AWS and can be accessed using this <a target="_blank" href="https://d1rvrsyyo2fky9.cloudfront.net">LINK</a>.</p>
+      <p class="text">ZoomTrip is a interactie website that I co-created. I designed the website, and wrote all of the javascript that allows zoomtrip to be interactive. I also wrote a utility program used to store metadata in the images, so when an image is loaded corresponding text could also be loaded as well. The website is hosted on AWS and can be accessed using this <a target="_blank" class="inLink" href="https://d1rvrsyyo2fky9.cloudfront.net">LINK</a>.</p>
       
       <h3 class="portfolio-heading">Theodore Roosevelt</h3>
       <a href="images/portfolio/roosevelt.jpg" data-lightbox="roosevelt"><img class="portfolio-images" alt="roosevelt" src="images/portfolio/roosevelt.jpg"></a>
@@ -273,29 +287,48 @@
     <!-- contect section -->
     <section id="contact" class="contact-section">
       <h1>Contact</h1>
-      <div class="contact-div" style="padding-top: 50px;">
-        <img class="contact-image" src="images/contact/email.svg" alt="email icon">
-        <a class="contact" target="_blank" href="mailto:meyer.mcmains@gmail.com">meyer.mcmains@gmail.com</a>
-      </div>
-      <div class="contact-div">
-        <img class="contact-image" src="images/contact/phonenum.svg" alt="phone icon">
-        <a class="contact" target="_blank" href="tel:1-615-943-6497">(615)-943-6497</a>
-      </div>
-      <div class="contact-div">
-        <img class="linkedin" style="margin-left: 5px" src="images/code/github.svg" alt="github icon">
-        <a class="contact" target="_blank" href="https://github.com/meyer-mcmains">My GitHub</a>
-      </div>
-      <div class="contact-div">
-        <img class="linkedin" src="images/contact/linkedin.svg" alt="linkedin icon">
-        <a class="contact" target="_blank" href="https://www.linkedin.com/in/meyer-mcmains-55523a120/">My LinkedIn</a>
-      </div>
+
+      <ul class="contact-list">
+        <li>
+          <i class="contact-image fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+          <a class="contact" target="_blank" href="mailto:meyer.mcmains@gmail.com">meyer.mcmains@gmail.com</a>
+        </li>
+        <li>
+          <i class="contact-image fa fa-mobile fa-4x" aria-hidden="true"></i>
+          <a class="contact" target="_blank" href="tel:1-615-943-6497">(615)-943-6497</a>
+        </li>
+        <li>
+          <i class="contact-image fa fa-github fa-4x" aria-hidden="true"></i>
+          <a class="contact" target="_blank" href="https://github.com/meyer-mcmains">My GitHub</a>
+        </li>
+        <li>
+          <i class="contact-image fa fa-linkedin fa-4x" aria-hidden="true"></i>
+          <a class="contact" target="_blank" href="https://www.linkedin.com/in/meyer-mcmains-55523a120/">My LinkedIn</a>
+        </li>
+      </ul>
     </section> 
+
+    <!-- recolor -->
+    <div class="recolor">
+      <i class="click fa fae-palette-color fa-4x" aria-hidden="true"></i>
+
+      <div class="colors">
+        <ul>
+          <li><i data-color="default" style="color: #0D9CF6;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+          <li><i data-color="lightgreen" style="color: #00B67E;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+          <li><i data-color="orange" style="color: #BD8300;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+          <li><i data-color="redish" style="color: #ff585d;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+          <li><i data-color="pink" style="color: #FF54EE;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+          <li><i data-color="purple" style="color: #8F70FF;" class="color fa fa-circle fa-4x" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- other javascript used -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="scrollingNav/js/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="scrollingNav/js/scrolling-nav.js" type="text/javascript"></script>
-    <script src="lightbox/js/lightbox.js" type="text/javascript"></script>
+    <script src="vendor/scrollingNav/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="vendor/scrollingNav/js/scrolling-nav.js" type="text/javascript"></script>
+    <script src="vendor/lightbox/js/lightbox.min.js" type="text/javascript"></script>
     <script src="js/expand.min.js" type="text/javascript"></script>
     </body>
 </html>
