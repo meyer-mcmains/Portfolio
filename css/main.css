@@ -236,6 +236,14 @@ a:focus {
 	 padding: 0px;
 }
 
+.name {
+	color: #0D9CF6;
+}
+
+.svgDesc {
+	margin: 0;
+}
+
 /* below is the css to modify logos at a certain width */
 @media (max-width: 1200px) {
 
