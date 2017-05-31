@@ -244,6 +244,15 @@ a:focus {
 	margin: 0;
 }
 
+.jcproject {
+	width: 432px !important;
+	height: 768px !important;
+}
+
+.jcstatic {
+	display: none;
+}
+
 /* below is the css to modify logos at a certain width */
 @media (max-width: 1200px) {
 
@@ -377,5 +386,13 @@ a:focus {
 
 	.recolor {
 		display: none;
+	}
+
+	.jcproject {
+		display: none;
+	}
+
+	.jcstatic {
+		display: inline-block;
 	}
 }
