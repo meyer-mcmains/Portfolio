@@ -106,9 +106,10 @@ h1 {
 }
 
 .portfolio-images {
-	width: 50%;
+	max-width: 50%;
 	border: solid 2px #0D9CF6;
 	border-radius: 5px;
+	max-height: 80vh;
 }
 
 .portfolio-heading {
@@ -306,6 +307,7 @@ a:focus {
 		width: 90%;
 		border: solid 2px #0D9CF6;
 		border-radius: 5px;
+		max-width: none;
 	}
 
 	.portfolio-heading {

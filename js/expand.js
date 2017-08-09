@@ -41,6 +41,9 @@ $('.logos').click(function () {
     case 'css':
     	$('#expand1').html('<p class="svgDesc"><span class="name" style="color: ' + colorHex + ';">Cascading Style Sheets (CSS)</span> is a style sheet language used for describing the presentation of a document written in a markup language. CSS is one of the three core technologies of World Wide Web content production.</p>');
     	break;
+    case 'sass':
+        $('#expand1').html('<p class="svgDesc"><span class="name" style="color: ' + colorHex + ';">Syntactically Awesome Stylesheets (Sass)</span> is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). </p>');
+        break;
     case 'js':
     	$('#expand1').html('<p class="svgDesc"><span class="name" style="color: ' + colorHex + ';">JavaScript (JS)</span>, is a high-level, dynamic, untyped, and interpreted run-time language. JavaScript is one of the three core technologies of World Wide Web content production.</p>');
     	break;
